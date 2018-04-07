@@ -4,11 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 
-	<title>Johnny Canelones</title>
 	<link rel="icon" type="image/png" href="public/images/IMG-5277 (2)-min.jpg" />
 	<link rel="stylesheet" type="text/css" href="public/app.css">
+	<script defer src="public/fonts/fontawesome/fontawesome.js"></script>
+	<title>Johnny Canelones</title>
+
 </head>
 <body>
+
 	<header id="header">	
 		<div class ="Menu">
 			<img class="Menu-image" src="public/images/IMG-5277 (2)-min.jpg" alt="Johnny Canelones">
@@ -16,18 +19,18 @@
 			<h3 class="status">Front-End Web Developer Jr</h3>
 
 			<nav class="Menu-items">
-				<h3><a href="#card">Sobre mí</a></h3>
-				<h3><a href="#certificaciones">Certificaciones</a></h3>
-				<h3><a href="#portafolio">Portafolio</a></h3>
+				<h3 id="sobre-mi"><a href="#">Sobre mí</a></h3>
+				<h3 id="scroll-certi"><a href="#">Certificaciones</a></h3>
+				<h3 id="scroll-portafolio"><a href="#">Portafolio</a></h3>
 			</nav>
 			<div class="Menu-contacto">
-				<a href="#contactame"><h3>Contactame</h3></a>
+				<a id="scroll-contacto" href="#"><h3>Contactame</h3></a>
 				<div class="Menu-socialMedia">
-					<a target="_blank" href="https://www.facebook.com/johnny.canelones"><img class="facebook" src="public/images/if_facebook_circle_gray_107140.png"></a>
-					<a target="_blank" href="https://twitter.com/JCanelones97"><img class="twitter" src="public/images/if_twitter_circle_gray_107135.png"></a>
-					<a target="_blank" href="https://www.instagram.com/johnnycanelones/"><img class="instagram"  src="public/images/if_instagram_circle_gray_107138.png"></a>
-					<a target="_blank" href="https://www.linkedin.com/in/johnny-canelones-73a86a154/"><img class="linkedin"  src="public/images/if_linkedin_circle_gray_107149.png"></a>
-					<a target="_blank" href="https://github.com/JohnnyCanelones"><img class="github"  src="public/images/if_github_circle_gray_107139.png"></a>
+					<a target="_blank" href="https://www.facebook.com/johnny.canelones"><i class="fab fa-facebook-f letra facebook padding"></i></a>
+					<a target="_blank" href="https://twitter.com/JCanelones97"><i class="fab fa-twitter twitter padding letra"></i></a>
+					<a target="_blank" href="https://www.instagram.com/johnnycanelones/"><i class="fab fa-instagram instagram padding letra"></i></a>
+					<a target="_blank" href="https://www.linkedin.com/in/johnny-canelones-73a86a154/"><i class="fab fa-linkedin-in linkedin padding letra"></i></a>
+					<a target="_blank" href="https://github.com/JohnnyCanelones"><i class="fab fa-github github letra "></i></a>
 					
 				</div>
 				
@@ -36,8 +39,13 @@
 
 		</div>
 	</header>
-
+	
    	<div id="card" class="sombra">
+   		<div id="caja-flotante" style=" position: fixed; ">
+   			<a id="scroll-up" href="#"><i class="fa fa-arrow-up "></i></a>
+   			
+   		</div>
+
 		<section class="Body">
 			<div id="yo">
 		         <h2>Sobre mí</h2>
@@ -135,7 +143,7 @@
 			    		<img class="img" src="public/images/capacitacion-1-min.jpg">
 			    	</div></a>
 			    	<div class="certificados titulo-1">
-			    		<a href="https://drive.google.com/open?id=0B4DQvWNDHgEtNEdOZ00zVDFiY1JPazcxYTBYX1NadEdUWXZV" target="_blank"><h4>Titúlo de Técnico Superior en Informática</h4>
+			    		<a href="https://drive.google.com/open?id=0B4DQvWNDHgEtNEdOZ00zVDFiY1JPazcxYTBYX1NadEdUWXZV" target="_blank"><h4>Título de Técnico Superior en Informática</h4>
 			    		<img  class="titulo" src="public/images/tutulo-tsu-johnny.jpg" alt="titulo Tsu"></a>
 			    	</div>
 			    	
@@ -149,7 +157,7 @@
 		    			<img class="titulo" src="public/images/Captura de pantalla (19).png"></a>
 		    		</div>
 		    		<div class="certificados titulo-1">
-		    			<a target="_blank" ><h4>Web para la gestión de la Universidad Uptp (En Producción)</h4>
+		    			<a class="up" target="_blank" ><h4>Web para la gestión de la Universidad Uptp (En Producción)</h4>
 		    			<img class="titulo" src="public/images/Captura de pantalla (20).png"></a>
 		    		</div>
 		    	</div>
@@ -159,5 +167,7 @@
 	<br>
 	<br>
 	</div>
+	<script type="text/javascript" src="public/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="public/index.js"></script>
 </body>
 </html>
