@@ -56,6 +56,11 @@ $(function (){
 })
 
 let ancho = $(window).width()
+
+if (ancho > 400) {
+		$('#scroll-up').css('font-size','50px')
+}
+
 if (ancho > 780) {
 	$('#caja-flotante').css('visibility','hidden')
 }else {
